@@ -1,139 +1,140 @@
 # 🌫️ ArduinoUno-AirQuality-FusionSystem
 
-## 📌 Project Overview
+## 📌 Descripción del Proyecto
 
-This project consists of the design and implementation of a low-cost embedded IoT prototype for real-time air quality monitoring in Sabana Centro (Cundinamarca, Colombia).
+Este proyecto consiste en el diseño e implementación de un prototipo embebido IoT de bajo costo para el monitoreo en tiempo real de la calidad del aire en la región Sabana Centro (Cundinamarca, Colombia).
 
-The system integrates multiple environmental signals and applies data fusion logic to generate reliable in situ alerts without the use of communication networks.
+El sistema integra múltiples variables ambientales críticas y aplica lógica de fusión de datos para generar alertas tempranas **in situ**, sin utilizar redes de comunicación, cumpliendo con las restricciones técnicas del reto académico.
 
-Developed using an Arduino Uno as the central embedded system.
-
----
-
-## 🎯 Objective
-
-To design and implement an embedded system capable of:
-
-- Measuring particulate matter (PM2.5 / PM10)
-- Detecting pollutant gases
-- Monitoring meteorological variables (temperature, humidity, pressure)
-- Combining multiple environmental signals through data fusion
-- Generating real-time local alerts using physical actuators
+El sistema está desarrollado utilizando un **Arduino Uno** como microcontrolador principal.
 
 ---
 
-## 🧠 System Architecture
+## 🎯 Objetivo
 
-The system is structured into three main subsystems:
+Diseñar e implementar un sistema embebido capaz de:
 
-### 1️⃣ Sensing Layer
-- PMS5003 → Particulate Matter (UART)
-- MQ135 → Gas concentration (Analog input)
-- BME280 → Temperature, Humidity, Pressure (I2C)
+- Medir material particulado (PM2.5 / PM10)
+- Detectar gases contaminantes
+- Registrar variables meteorológicas (temperatura, humedad y presión)
+- Integrar múltiples señales mediante lógica de fusión ambiental
+- Generar alertas locales en tiempo real mediante actuadores físicos
 
-### 2️⃣ Processing Layer
+---
+
+## 🧠 Arquitectura del Sistema
+
+El sistema se compone de tres subsistemas principales:
+
+### 1️⃣ Capa de Sensado
+- PMS5003 → Material particulado (UART)
+- MQ135 → Concentración de gases (Entrada analógica)
+- BME280 → Temperatura, Humedad y Presión (I2C)
+
+### 2️⃣ Capa de Procesamiento
 - Arduino Uno
-- Signal acquisition module
-- Data filtering and validation
-- Environmental data normalization
-- Fusion engine (composite air quality index)
-- Threshold classification logic
+- Módulo de adquisición de señales
+- Filtrado y validación de datos
+- Normalización de variables ambientales
+- Motor de fusión de datos
+- Clasificación por umbrales de calidad del aire
 
-### 3️⃣ Actuation & Interface Layer
-- LCD display (real-time visualization)
-- Buzzer (acoustic alert)
-- RGB LED indicators (air quality status)
-
----
-
-## 🚫 Design Constraints
-
-- No Raspberry Pi allowed
-- No communication networks for alerting
-- Fully autonomous operation
-- In situ alerts only (visual + sound)
+### 3️⃣ Capa de Actuación e Interfaz
+- Pantalla LCD (visualización en tiempo real)
+- Buzzer (alerta sonora)
+- LED RGB (indicador visual del estado del aire)
 
 ---
 
-## 📊 Air Quality Classification
+## 🚫 Restricciones de Diseño
 
-The system computes a composite environmental score and classifies air quality into:
-
-- 🟢 Good
-- 🟡 Moderate
-- 🟠 Harmful
-- 🔴 Dangerous
-
-Each level triggers specific visual and acoustic patterns.
+- No se permite el uso de Raspberry Pi
+- No se permite el uso de redes de comunicación para generar alertas
+- El sistema debe operar de manera completamente autónoma
+- Las alertas deben ser exclusivamente físicas y visuales (in situ)
 
 ---
 
-## 🧪 Experimental Validation
+## 📊 Clasificación de la Calidad del Aire
 
-The system was tested under controlled variations of:
+El sistema calcula un índice compuesto de calidad del aire y lo clasifica en:
 
-- Particulate exposure
-- Gas presence (alcohol simulation)
-- Environmental parameter changes
+- 🟢 Bueno
+- 🟡 Moderado
+- 🟠 Dañino
+- 🔴 Peligroso
 
-The fusion logic and alert activation were validated under critical scenarios.
+Cada nivel activa patrones específicos de alerta visual y sonora.
 
 ---
 
-## 🛠️ Hardware Used
+## 🧪 Validación Experimental
+
+Se realizaron pruebas controladas variando:
+
+- Exposición a material particulado
+- Presencia de gases (simulación con alcohol)
+- Cambios en variables ambientales
+
+Se verificó el comportamiento de la lógica de fusión y la activación correcta del sistema de alertas ante escenarios críticos.
+
+---
+
+## 🛠️ Hardware Utilizado
 
 - Arduino Uno
-- PMS5003
-- MQ135
-- BME280
-- LCD Display (I2C)
-- Active Buzzer
-- RGB LED
+- Sensor PMS5003
+- Sensor MQ135
+- Sensor BME280
+- Pantalla LCD con interfaz I2C
+- Buzzer activo
+- LED RGB
 
 ---
 
-## 👥 Team Members
+## 👥 Integrantes
 
-- Name 1
-- Name 2
-- Name 3
+- Nombre 1
+- Nombre 2
+- Nombre 3
 
-Course: Internet of Things  
-Faculty of Engineering  
+Curso: Internet de las Cosas  
+Facultad de Ingeniería  
 Universidad de La Sabana  
 2026-1  
 
 ---
 
-## 🎥 Demonstration Video
+## 🎥 Video Demostrativo
 
-[Insert MS Teams or public video link here]
-
----
-
-## 📚 Full Technical Documentation
-
-The complete technical documentation, including:
-
-- Design constraints
-- System architecture diagrams
-- UML diagrams
-- Fusion logic design
-- Experimental configuration
-- Results and analysis
-- AI usage disclosure (if applicable)
-
-is available in the **Wiki section** of this repository.
-
-👉 [Go to Wiki]
+[Insertar enlace al video en MS Teams]
 
 ---
 
-## 📌 Project Status
+## 📚 Documentación Técnica Completa
 
-✔ Functional prototype  
-✔ Data fusion implemented  
-✔ In situ alert system validated  
-✔ Technical documentation in progress  
+La documentación técnica completa del proyecto, incluyendo:
+
+- Restricciones de diseño
+- Arquitectura del sistema
+- Diagramas de bloques
+- Diagramas UML
+- Diseño de la lógica de fusión
+- Configuración experimental
+- Resultados y análisis
+- Declaración del uso de Inteligencia Artificial (si aplica)
+
+se encuentra disponible en la sección **Wiki** del repositorio.
+
+👉 [Ir a la Wiki]
+
+---
+
+## 📌 Estado del Proyecto
+
+✔ Prototipo funcional  
+✔ Lógica de fusión implementada  
+✔ Sistema de alertas validado  
+✔ Documentación técnica en desarrollo  
 
 ---
