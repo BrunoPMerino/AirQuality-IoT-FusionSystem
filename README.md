@@ -4,9 +4,9 @@
 
 Este proyecto consiste en el diseño e implementación de un prototipo embebido IoT de bajo costo para el monitoreo en tiempo real de la calidad del aire en la región Sabana Centro (Cundinamarca, Colombia).
 
-El sistema integra múltiples variables ambientales (material particulado, gases y condiciones meteorológicas) y aplica una lógica de fusión de datos para generar alertas tempranas **in situ**, sin utilizar redes de comunicación, cumpliendo con las restricciones técnicas del reto académico.
+El sistema integra múltiples variables ambientales (material particulado, gases y condiciones meteorológicas) y aplica una lógica de fusión de datos para generar alertas tempranas in situ, sin utilizar redes de comunicación, cumpliendo con las restricciones técnicas del reto académico.
 
-El sistema está desarrollado utilizando un **Arduino Uno** como microcontrolador principal.
+El sistema está desarrollado utilizando un Arduino Uno*como microcontrolador principal.
 
 ---
 
@@ -38,7 +38,7 @@ Cada sensor entrega datos independientes que luego son procesados por el microco
 El Arduino Uno realiza:
 - Lectura periódica de sensores
 - Validación básica de datos
-- Cálculo de un **índice compuesto** de calidad del aire (combinando las variables con distinta importancia)
+- Cálculo de un índice compuesto de calidad del aire (combinando las variables con distinta importancia)
 - Clasificación del estado del aire mediante umbrales
 
 La lógica de fusión asigna mayor peso al material particulado y a los gases por su impacto directo en la salud.
@@ -123,7 +123,7 @@ Se verificó que:
 2. Instalar las librerías necesarias (ver Wiki).  
 3. Conectar el Arduino Uno por USB y cargar el programa.
 
-> Nota: Los detalles de conexión (pines), librerías y configuración se documentan en la **Wiki**.
+> Nota: Los detalles de conexión (pines) se documentan en la **Wiki**.
 
 ---
 
@@ -155,7 +155,7 @@ La documentación técnica completa (arquitectura detallada, diagramas, modelo d
 
 ## Estado del Proyecto
 
-✔ Prototipo funcional  
-✔ Lógica de fusión implementada  
-✔ Sistema de alertas validado  
-✔ Documentación técnica en desarrollo  
+- Prototipo funcional  
+- Lógica de fusión implementada  
+- Sistema de alertas validado  
+- Documentación técnica en desarrollo  
