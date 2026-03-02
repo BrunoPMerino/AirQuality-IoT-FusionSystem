@@ -141,7 +141,7 @@ Universidad de La Sabana
 
 ##  Video Demostrativo
 
-[Insertar enlace al video en MS Teams]
+[Video](https://youtu.be/zHWzqJutPME)
 
 ---
 
@@ -149,7 +149,7 @@ Universidad de La Sabana
 
 La documentación técnica completa (arquitectura detallada, diagramas, modelo de fusión, configuración experimental, resultados y análisis) se encuentra en la sección **Wiki** del repositorio.
 
-[Ir a la Wiki]
+[Ir a la Wiki](https://github.com/BrunoPMerino/AirQuality-IoT-FusionSystem/wiki)
 
 ---
 
